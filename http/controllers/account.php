@@ -1,9 +1,5 @@
 <?php
 
-
-
-
-
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -12,9 +8,7 @@
 class account extends Controller {
 
     function __construct() {
-        
         parent::__construct();
-        
     }
     public function modifyPassword(){
         if ($_POST){
@@ -29,7 +23,7 @@ class account extends Controller {
         }
     }
     public function getUserDetails($e){
-    $object  = new accountModel();
+        $object  = new accountModel();
     	echo json_encode($object->getUsers($e[2]));
     }
     public function viewUsers(){
@@ -185,6 +179,6 @@ class account extends Controller {
         $this->view->render("profile/edit");
     }
     
-    }
+}
 
 ?>
