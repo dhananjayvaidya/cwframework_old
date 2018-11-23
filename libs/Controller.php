@@ -1,9 +1,5 @@
 <?php
-//@require "models/account.php";
 class Controller {
-
-
-
     function __construct() {
 	@session_start();
        $this->view = new View();
@@ -16,8 +12,5 @@ class Controller {
        	print_r($e);
        }
     }
-
-
-
 }
 ?>
